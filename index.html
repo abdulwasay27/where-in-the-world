@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Where in the world?</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+      <header class="header">
+            <nav class="navbar">
+                  <ul>
+                        <li><a href="#">Where in the world?</a></li>
+                        <li><button id="toggle-btn">Light Mode</button></li>
+                  </ul>
+            </nav>
+      </header>
+      <div class="search-items">
+            <input type="text" placeholder="Search for a country..." class="search-bar" id="search-items" onkeyup="search_country()">
+
+                  <select name="select-items" id="items" onchange="filter_country()">
+                        <option value="" disabled selected>Filter by Region</option>
+                        <option value="Remove Filter" class="options">Remove Filter</option>
+                        <option value="Asia" class="options">Aisa</option>
+                        <option value="America" class="options">America</option>
+                        <option value="Africa" class="options">Africa</option>
+                        <option value="Europe" class="options">Europe</option>
+                        <option value="Oceania" class="options">Oceania</option>
+                  </select>      
+      </div>
+      <div class="countries-container">
+            
+      </div>
+      <script src="script.js"></script>
+      <script src="lightMode.js"></script>
+</body>
+</html>
