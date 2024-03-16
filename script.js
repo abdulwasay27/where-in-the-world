@@ -17,15 +17,14 @@ const search_country=()=>
 const filter_country=()=>
 {
       const continent=document.getElementById('items').value;
-      // console.log(continent);
+     
       const allCountries=document.querySelectorAll('.country');
       allCountries.forEach((country)=>{
             
             const selectedCountry=country.querySelector('.country-details');
             const continentName = selectedCountry.getElementsByTagName('h3')[1].innerHTML;
             if (continentName.includes(continent) || continent==="Remove Filter") {
-                  console.log(country);
-                  console.log(continentName);
+                  
                   country.style.display="flex";
             }
             else 
